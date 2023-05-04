@@ -1,0 +1,187 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+main {
+    background-image: url('./../assets/blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-Container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#principal-triangle {
+    line-height: 224px;
+    border-width: 0px 128px 192px 128px;
+    border-color: transparent transparent rgba(240, 173, 78) transparent;
+    z-index: 100;
+    margin: 0px 1px 1px 1px;
+    font-size: 72px;
+}
+
+
+#triangle-top-l {
+    border-width: 0px 0px 128px 224px;
+    border-color: transparent transparent rgba(240, 173, 78, 0.6) transparent;
+    margin: 0px 0.5px 1px 0px;
+}
+
+#triangle-top-l p {
+    margin-left: -64px;
+    line-height: 192px;
+    transform: rotate(25deg);
+    font-size: 46px;
+}
+
+#triangle-top-r {
+    border-width: 128px 0px 0px 224px;
+    border-color: transparent transparent transparent rgba(240, 173, 78, 0.6);
+    margin: 0px 0px 1px 0.5px;
+}
+
+#triangle-top-r p {
+    margin-top: -72px;
+    margin-left: -300px;
+    transform: rotate(-25deg);
+    font-size: 46px;
+}
+
+
+
+#triangle-center-small-l {
+    border-width: 192px 0px 0px 96px;
+    margin: 0px -95px 1px 0px;
+    border-color: transparent transparent transparent rgba(240, 173, 78, 0.6);
+}
+
+#triangle-center-small-l p {
+    margin-right: 60px;
+    margin-top: -128px;
+    transform: rotate(245deg);
+    font-size: 36px;
+}
+
+#triangle-center-small-r {
+    border-width: 0px 0px 192px 96px;
+    margin: 0px 0px 0px -95px;
+    border-color: transparent transparent rgba(240, 173, 78, 0.6) transparent;
+}
+
+#triangle-center-small-r p {
+    margin-right: 36px;
+    margin-top: 152px;
+    transform: rotate(-245deg);
+    font-size: 36px;
+
+}
+
+#triangle-center-medium-l,
+#triangle-center-medium-r {
+    border-color: transparent transparent rgba(240, 173, 78, 0.8) transparent;
+    transform: rotate(180deg);
+}
+
+#triangle-center-medium-l {
+    border-width: 0px 96px 192px 128px;
+    margin: 0px -128px 0px 0px;
+}
+
+#triangle-center-medium-l p {
+    margin-top: 148px;
+    margin-left: 32px;
+    transform: rotate(125deg);
+    font-size: 52px;
+}
+
+
+#triangle-center-medium-r {
+    border-width: 0px 128px 192px 96px;
+    margin: 0px 0px 0px -128px;
+}
+
+#triangle-center-medium-r p {
+    margin-top: 148px;
+    margin-left: -32px;
+    transform: rotate(-125deg);
+    font-size: 52px;
+}
+
+
+
+
+#triangle-bottom-l {
+    border-width: 0px 172px 48px 83px;
+    border-color: transparent transparent rgba(240, 173, 78, 0.4) transparent;
+    transform: rotate(30deg);
+    margin: 19px -154px 0px 0px;
+}
+
+#triangle-bottom-l p {
+    transform: rotate(-165deg);
+    margin-left: 64px;
+    margin-bottom: -48px;
+}
+
+
+#triangle-bottom-c {
+    border-width: 131px 128px 0px 128px;
+    border-color: rgba(240, 173, 78, 0.8) transparent transparent transparent;
+    margin: 0px 1px 0px 1px;
+}
+
+#triangle-bottom-c p {
+    margin-bottom: 200px;
+    margin-top: -48px;
+    transform: rotate(-180deg);
+    font-size: 52px;
+
+}
+
+#triangle-bottom-r {
+    border-width: 0 83px 48px 172px;
+    border-color: transparent transparent rgba(240, 173, 78, 0.4) transparent;
+    transform: rotate(-30deg);
+    margin: 19px 0px 0px -154px;
+}
+
+#triangle-bottom-r p {
+    transform: rotate(165deg);
+    margin-left: -64px;
+    margin-bottom: -48px;
+}
+
+@media (max-width: 576px) {
+    main {
+        background-image: url('./../assets/blob-scene-haikei\ \(2\).svg');
+        background-repeat: no-repeat;
+        background-size: 600%;
+        background-position: bottom left;
+    }
+}
